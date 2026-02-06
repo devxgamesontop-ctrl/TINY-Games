@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Games Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top">Tiny Games</a>
+        <div class="nav-links">
+          <a href="#values">Values DB</a>
+          <a href="#merch">Merch</a>
+          <a href="#updates">Updates</a>
+        </div>
+        <button class="cta">Play Now</button>
+      </nav>
+      <section class="hero" id="top">
+        <div>
+          <p class="eyebrow">Simple. Fun. Growing.</p>
+          <h1>Welcome to Tiny Games Hub</h1>
+          <p class="hero-copy">
+            A lightweight home for our game economy, merch drops, and update logs.
+            Everything you need to stay in the loop—no clutter.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Explore Values</button>
+            <button class="ghost">Read Updates</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat">24</span>
+              <span class="label">Active Items</span>
+            </div>
+            <div>
+              <span class="stat">7</span>
+              <span class="label">Merch Drops</span>
+            </div>
+            <div>
+              <span class="stat">12</span>
+              <span class="label">Latest Updates</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Starter Pack</h2>
+          <p>Quick links to jump in.</p>
+          <ul>
+            <li>Market snapshots</li>
+            <li>Developer roadmap</li>
+            <li>Community highlights</li>
+          </ul>
+          <button class="primary">Open Dashboard</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="values">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Values Database</p>
+            <h2>Track in-game item values</h2>
+          </div>
+          <div class="search">
+            <input id="valueSearch" type="search" placeholder="Search items..." />
+            <span id="resultCount">0 results</span>
+          </div>
+        </div>
+        <div class="table">
+          <div class="table-header">
+            <span>Item</span>
+            <span>Value</span>
+            <span>Rarity</span>
+            <span>Trend</span>
+          </div>
+          <div id="valuesBody" class="table-body"></div>
+        </div>
+      </section>
+
+      <section class="section" id="merch">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Merch Store</p>
+            <h2>Limited drops, easy checkout</h2>
+          </div>
+          <button class="ghost">View all merch</button>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Galaxy Hoodie</h3>
+            <p>Soft fleece with glow ink logo.</p>
+            <div class="price">$52</div>
+            <button class="primary">Buy now</button>
+          </article>
+          <article class="card">
+            <h3>Collector Pin Set</h3>
+            <p>Five enamel pins in matte finish.</p>
+            <div class="price">$18</div>
+            <button class="primary">Buy now</button>
+          </article>
+          <article class="card">
+            <h3>Starter Tee</h3>
+            <p>Classic fit with reflective icon.</p>
+            <div class="price">$24</div>
+            <button class="primary">Buy now</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="updates">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Update Logs</p>
+            <h2>What changed this week</h2>
+          </div>
+          <button class="ghost">Full changelog</button>
+        </div>
+        <div class="timeline">
+          <article class="timeline-entry">
+            <div class="date">Aug 18</div>
+            <div>
+              <h3>Marketplace refresh</h3>
+              <p>Added live demand indicator and faster price refresh cycle.</p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="date">Aug 12</div>
+            <div>
+              <h3>Merch drop #7</h3>
+              <p>Limited glow hoodie, ships worldwide starting next week.</p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="date">Aug 05</div>
+            <div>
+              <h3>New mini-quests</h3>
+              <p>Added 5 daily quests with boosted drop rates.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>Tiny Games</h3>
+        <p>Made for players who love quick updates and clear value data.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#values">Values</a>
+        <a href="#merch">Merch</a>
+        <a href="#updates">Updates</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
